@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Learners - Where Young Minds Blossom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FF8D4D",
+              secondary: "#FFBE99",
+              tertiary: "#FFEFE5",
+              background: "#FFF5F0",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background pt-4 pb-10">
+    <!-- Top Banner -->
+    <div
+      class="bg-primary text-white px-4 flex justify-between items-center w-[95%] overflow-hidden border-l-2 border-r-2 border-black mx-auto mb-4 h-[58px] rounded-lg bg-cover bg-center"
+      style="background-image: url(images/Top\ Banner.png)"
+    ></div>
+
+    <!-- Navigation -->
+    <nav
+      class="bg-white shadow-sm h-auto md:h-16 w-[95%] mx-auto flex rounded-lg border-2 border-black overflow-hidden"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-center w-full"
+      >
+        <!-- Logo -->
+        <div
+          class="flex items-center gap-2 px-4 bg-primary h-16 w-full md:w-auto border-b-2 md:border-b-0 md:border-r-2 border-black"
+        >
+          <img src="/images/shape-14.png" alt="logo" class="w-8" />
+          <span class="font-bold text-xl">Little Learners</span>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden p-4" id="mobile-menu-button">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex h-full w-full md:w-auto" id="nav-links">
+          <div class="flex flex-col md:flex-row h-full w-full">
+            <div
+              class="h-full flex items-center px-6 bg-tertiary border-b-2 md:border-b-0 md:border-l-2 border-black font-semibold hover:bg-tertiary"
+            >
+              <a href="#" class="w-full text-center py-4 md:py-0">Home</a>
+            </div>
+            <div
+              class="h-full flex items-center px-6 border-b-2 md:border-b-0 md:border-l-2 border-black font-semibold hover:bg-tertiary"
+            >
+              <a href="#" class="w-full text-center py-4 md:py-0">About Us</a>
+            </div>
+            <div
+              class="h-full flex items-center px-6 border-b-2 md:border-b-0 md:border-l-2 border-black font-semibold hover:bg-tertiary"
+            >
+              <a href="#" class="w-full text-center py-4 md:py-0">Academics</a>
+            </div>
+            <div
+              class="h-full flex items-center px-6 border-b-2 md:border-b-0 md:border-l-2 border-black font-semibold hover:bg-tertiary"
+            >
+              <a href="#" class="w-full text-center py-4 md:py-0">Admissions</a>
+            </div>
+            <div
+              class="h-full flex items-center px-6 border-b-2 md:border-b-0 md:border-l-2 md:border-r-2 border-black font-semibold hover:bg-tertiary"
+            >
+              <a href="#" class="w-full text-center py-4 md:py-0"
+                >Student Life</a
+              >
+            </div>
+            <div class="bg-primary h-full flex items-center px-6 font-semibold">
+              <button class="w-full text-center py-4 md:py-0">Contact</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-[80vh] mx-auto pt-8 md:pt-16 container px-4">
+      <div
+        class="h-full flex flex-col md:flex-row justify-center items-center gap-8 md:gap-20"
+      >
+        <div
+          class="h-[300px] md:h-full bg-secondary w-full md:w-1/2 flex justify-center items-center relative"
+        >
+          <img
+            src="/images/Image.png"
+            alt="herosectionimg"
+            class="h-full w-full object-cover object-bottom"
+          />
+          <div class="absolute h-full w-full">
+            <img
+              src="/images/Abstract Design.png"
+              alt=""
+              class="h-full absolute top-0 -left-1"
+            />
+            <img
+              src="/images/Abstract Design (1).png"
+              alt=""
+              class="w-full absolute -bottom-2 -left-1"
+            />
+            <img
+              src="/images/Abstract Design (2).png"
+              alt=""
+              class="h-full absolute top-1 -right-1 lg:-right-3"
+            />
+            <img
+              src="/images/Abstract Design (3).png"
+              alt=""
+              class="w-[98.5%] absolute -top-1 -right-1"
+            />
+            <img
+              src="/images/Abstract Design (4).png"
+              alt=""
+              class="absolute top-10 left-32 w-[60%]"
+            />
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 px-4 md:px-0">
+          <div>
+            <div class="underline underline-offset-4 text-lg font-semibold">
+              Welcome to Little Learners Academy
+            </div>
+            <div class="text-3xl lg:text-5xl font-semibold text-balance mt-2">
+              Where Young Minds Blossom and
+              <span class="text-primary">Dreams Take Flight.</span>
+            </div>
+            <div class="mt-6 md:mt-8 text-base md:text-lg font-medium">
+              Our kinder garden school provides a nurturing and stimulating
+              environment, fostering a love for learning that lasts a lifetime.
+              Join us as we embark on an exciting educational journey together!
+            </div>
+          </div>
+          <div
+            class="flex w-full bg-tertiary items-center justify-around h-32 md:h-40 rounded-xl border-2 border-black mt-8 md:mt-16 shadow-[8px_8px_0_0_#fbbd9c]"
+          >
+            <div>
+              <div class="text-2xl md:text-3xl font-bold">+7000</div>
+              <div class="text-xs md:text-sm text-gray-600">Students</div>
+            </div>
+            <div>
+              <div class="text-2xl md:text-3xl font-bold">+37</div>
+              <div class="text-xs md:text-sm text-gray-600">Teachers</div>
+            </div>
+            <div>
+              <div class="text-2xl md:text-3xl font-bold">+15</div>
+              <div class="text-xs md:text-sm text-gray-600">Awards</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="container mx-auto py-8 md:py-16 px-4">
+      <div class="text-center mb-8 md:mb-12">
+        <div
+          class="bg-white rounded-lg px-4 py-2 inline-block mb-4 border-2 border-black"
+        >
+          Children Deserve Bright Future
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold mt-2">Our Benefits</h2>
+        <p
+          class="mt-4 md:mt-8 max-w-2xl mx-auto text-pretty text-sm md:text-base"
+        >
+          With a dedicated team of experienced educators, state-of-the-art
+          facilities, and a comprehensive curriculum, we aim to lay the
+          foundation for a successful educational journey.
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 gap-y-16 md:gap-y-24 mt-16 md:mt-28"
+      >
+        <!-- 1 -->
+        <div
+          class="bg-white rounded-xl p-6 border-2 border-black relative pt-[80px] p-[30px] md:p-[50px] shadow-[7px_7px_0_0_#1E1E1E]"
+        >
+          <div
+            class="w-14 md:w-16 h-14 md:h-16 p-3 bg-secondary rounded-xl flex items-center justify-center mb-4 border-2 border-black absolute -top-7 md:-top-8 p-2"
+          >
+            <img src="/images/icons/Icon.png" alt="icon" class="w-full" />
+          </div>
+          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
+            Holistic Learning Approach
+          </h3>
+          <p class="text-gray-800 text-base md:text-lg mt-4">
+            Our curriculum focuses on nurturing cognitive, social, emotional,
+            and physical development, ensuring a well-rounded education.
+          </p>
+        </div>
+        <!-- 2 -->
+        <div
+          class="bg-white rounded-xl p-6 border-2 border-black relative pt-[80px] p-[30px] md:p-[50px] shadow-[7px_7px_0_0_#1E1E1E]"
+        >
+          <div
+            class="w-14 md:w-16 h-14 p-3 md:h-16 bg-secondary rounded-xl flex items-center justify-center mb-4 border-2 border-black absolute -top-7 md:-top-8 p-2"
+          >
+            <img src="/images/icons/Icon (1).png" alt="icon" class="w-full" />
+          </div>
+          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
+            Experienced Educators
+          </h3>
+          <p class="text-gray-800 text-base md:text-lg mt-4">
+            Our passionate and qualified teachers create a supportive and
+            stimulating learning environment.
+          </p>
+        </div>
+        <!-- 3 -->
+        <div
+          class="bg-white rounded-xl p-6 border-2 border-black relative pt-[80px] p-[30px] md:p-[50px] shadow-[7px_7px_0_0_#1E1E1E]"
+        >
+          <div
+            class="w-14 md:w-16 h-14 md:h-16 p-3 bg-secondary rounded-xl flex items-center justify-center mb-4 border-2 border-black absolute -top-7 md:-top-8 p-2"
+          >
+            <img
+              src="/images/icons/facemask.fill.png"
+              alt="icon"
+              class="w-full"
+            />
+          </div>
+          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
+            Nurturing Environment
+          </h3>
+          <p class="text-gray-800 text-base md:text-lg mt-4">
+            We prioritize safety and provide a warm and caring atmosphere for
+            every child.
+          </p>
+        </div>
+        <!-- 4 -->
+        <div
+          class="bg-white rounded-xl p-6 border-2 border-black relative pt-[80px] p-[30px] md:p-[50px] shadow-[7px_7px_0_0_#1E1E1E]"
+        >
+          <div
+            class="w-14 md:w-16 h-14 md:h-16 p-4 bg-secondary rounded-xl flex items-center justify-center mb-4 border-2 border-black absolute -top-7 md:-top-8 p-2"
+          >
+            <img
+              src="/images/icons/Vector (Stroke).png"
+              alt="icon"
+              class="w-full"
+            />
+          </div>
+          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
+            Play-Based Learning
+          </h3>
+          <p class="text-gray-800 text-base md:text-lg mt-4">
+            We believe in the power of play to foster creativity,
+            problem-solving skills, and imagination.
+          </p>
+        </div>
+        <!-- 5 -->
+        <div
+          class="bg-white rounded-xl p-6 border-2 border-black relative pt-[80px] p-[30px] md:p-[50px] shadow-[7px_7px_0_0_#1E1E1E]"
+        >
+          <div
+            class="w-14 md:w-16 h-14 md:h-16 p-4 bg-secondary rounded-xl flex items-center justify-center mb-4 border-2 border-black absolute -top-7 md:-top-8 p-2"
+          >
+            <img
+              src="/images/icons/Vector (Stroke) (1).png"
+              alt="icon"
+              class="w-full"
+            />
+          </div>
+          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
+            Individualized Attention
+          </h3>
+          <p class="text-gray-800 text-base md:text-lg mt-4">
+            Our small class sizes enable personalized attention, catering to
+            each child's unique needs.
+          </p>
+        </div>
+        <!-- 6 -->
+        <div
+          class="bg-white rounded-xl p-6 border-2 border-black relative pt-[80px] p-[30px] md:p-[50px] shadow-[7px_7px_0_0_#1E1E1E]"
+        >
+          <div
+            class="w-14 md:w-16 h-14 md:h-16 p-4 bg-secondary rounded-xl flex items-center justify-center mb-4 border-2 border-black absolute -top-7 md:-top-8 p-2"
+          >
+            <img src="/images/icons/Union.png" alt="icon" class="w-full" />
+          </div>
+          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
+            Parent Involvement
+          </h3>
+          <p class="text-gray-800 text-base md:text-lg mt-4">
+            We foster a strong parent-school partnership to ensure seamless
+            communication and collaboration.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container mx-auto py-8 md:py-16 px-4">
+      <div class="text-center py-8 md:py-12">
+        <div
+          class="bg-white rounded-lg px-4 py-2 inline-block mb-4 border-2 border-black"
+        >
+          Their Happy Words 🤗
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold mt-2">Our Testimonials</h2>
+        <p
+          class="mt-4 md:mt-8 max-w-2xl mx-auto text-pretty text-sm md:text-base"
+        >
+          Our testimonials are heartfelt reflections of the nurturing
+          environment we provide, where children flourish both academically and
+          emotionally.
+        </p>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <button
+          class="hidden md:flex md:items-center md:justify-center bg-white border border-black rounded-lg h-12 w-12"
+        >
+          <img
+            src="images/arrow/Vector (Stroke).svg"
+            alt="Description"
+            class="h-5 w-5"
+          />
+        </button>
+
+        <!-- Testimonial Cards Container -->
+        <div
+          class="flex flex-col md:flex-row gap-8 w-full overflow-x-auto md:overflow-visible"
+        >
+          <!-- 1 -->
+          <div
+            class="bg-white rounded-xl p-6 px-8 md:px-20 border-2 border-black shadow-[7px_7px_0_0_#1E1E1E] min-w-[280px] md:min-w-0"
+          >
+            <div class="flex flex-col justify-center items-center mb-4 gap-4">
+              <div
+                class="w-16 md:w-20 h-16 md:h-20 bg-tertiary border border-black rounded-full flex items-center justify-center mr-4"
+              >
+                <img src="/images/Vector.png" alt="pfp" class="w-12 md:w-16" />
+              </div>
+              <h4 class="font-semibold text-xl md:text-2xl text-gray-900">
+                Jennifer B
+              </h4>
+              <div>
+                <div class="flex gap-2">
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                </div>
+              </div>
+            </div>
+            <p
+              class="text-gray-700 text-center leading-6 md:leading-8 text-sm md:text-base"
+            >
+              Little Learners Academy has been a second home for my child. The
+              caring staff and engaging programs have made her excited to go to
+              school every day!
+            </p>
+          </div>
+          <!-- 2 -->
+          <div
+            class="bg-white rounded-xl p-6 px-8 md:px-20 border-2 border-black shadow-[7px_7px_0_0_#1E1E1E] min-w-[280px] md:min-w-0"
+          >
+            <div class="flex flex-col justify-center items-center mb-4 gap-4">
+              <div
+                class="w-16 md:w-20 h-16 md:h-20 bg-tertiary border border-black rounded-full flex items-center justify-center mr-4"
+              >
+                <img
+                  src="/images/Vector (1).png"
+                  alt="pfp"
+                  class="w-12 md:w-16"
+                />
+              </div>
+              <h4 class="font-semibold text-xl md:text-2xl text-gray-900">
+                David K
+              </h4>
+              <div>
+                <div class="flex gap-2">
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                </div>
+              </div>
+            </div>
+            <p
+              class="text-gray-700 text-center leading-6 md:leading-8 text-sm md:text-base"
+            >
+              Choosing Little Learners Academy for my daughter was the best
+              decision. She has thrived in their nurturing and stimulating
+              environment.
+            </p>
+          </div>
+          <!-- 3 -->
+          <div
+            class="bg-white rounded-xl p-6 px-8 md:px-20 border-2 border-black shadow-[7px_7px_0_0_#1E1E1E] min-w-[280px] md:min-w-0"
+          >
+            <div class="flex flex-col justify-center items-center mb-4 gap-4">
+              <div
+                class="w-16 md:w-20 h-16 md:h-20 bg-tertiary border border-black rounded-full flex items-center justify-center mr-4"
+              >
+                <img
+                  src="/images/Vector (2).png"
+                  alt="pfp"
+                  class="w-12 md:w-16"
+                />
+              </div>
+              <h4 class="font-semibold text-xl md:text-2xl text-gray-900">
+                Emily L
+              </h4>
+              <div>
+                <div class="flex gap-2">
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                  <img src="/images/Star.png" class="w-4 md:w-5" />
+                </div>
+              </div>
+            </div>
+            <p
+              class="text-gray-700 text-center leading-6 md:leading-8 text-sm md:text-base"
+            >
+              My son's social and academic growth has been remarkable since
+              joining Little Learners Academy. I am grateful for the supportive
+              and dedicated teachers.
+            </p>
+          </div>
+        </div>
+
+        <button
+          class="hidden md:flex md:items-center md:justify-center bg-white border border-black rounded-lg h-12 w-12"
+        >
+          <img
+            src="images/arrow/Vector (Stroke) (1).svg"
+            alt="Description"
+            class="h-5 w-5"
+          />
+        </button>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container mx-auto py-8 md:py-16 px-4">
+      <div class="text-center py-8 md:py-12">
+        <div
+          class="bg-white rounded-lg px-4 py-2 inline-block mb-4 border-2 border-black"
+        >
+          Solutions For The Doubts
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold mt-2">
+          Frequently Asked Questions
+        </h2>
+        <p class="mt-4 md:mt-8 max-w-2xl mx-auto text-sm md:text-base">
+          Find all the essential information you need in our FAQ section,
+          designed to address the most frequently asked questions and help you
+          make informed decisions for your child's education.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10">
+        <div class="flex flex-col gap-6">
+          <div
+            class="bg-white rounded-xl p-6 md:p-8 shadow-sm border-2 border-black"
+          >
+            <div class="flex justify-between items-center">
+              <h3
+                class="font-semibold text-gray-900 border-b-2 border-black w-[90%] pb-4 text-base md:text-lg"
+              >
+                What are the school hours at Little Learners Academy?
+              </h3>
+              <button
+                class="bg-background border-2 text-lg border-black w-8 h-8 md:w-10 md:h-10 rounded-lg"
+              >
+                -
+              </button>
+            </div>
+            <div class="w-[90%] text-pretty mt-4 text-sm md:text-base">
+              Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We
+              also offer extended care options for parents who need early
+              drop-off or late pick-up.
+            </div>
+          </div>
+          <div
+            class="bg-tertiary rounded-xl p-6 md:p-8 shadow-sm border-2 border-black"
+          >
+            <div class="flex justify-between items-center">
+              <h3 class="font-semibold text-gray-900 text-base md:text-lg">
+                What are the school hours at Little Learners Academy?
+              </h3>
+              <button
+                class="bg-background border-2 text-lg border-black w-8 h-8 md:w-10 md:h-10 rounded-lg"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-tertiary rounded-xl p-6 md:p-8 shadow-sm border-2 border-black"
+          >
+            <div class="flex justify-between items-center">
+              <h3 class="font-semibold text-gray-900 text-base md:text-lg">
+                What are the school hours at Little Learners Academy?
+              </h3>
+              <button
+                class="bg-background border-2 text-lg border-black w-8 h-8 md:w-10 md:h-10 rounded-lg"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-tertiary rounded-xl p-6 md:p-8 shadow-sm border-2 border-black"
+          >
+            <div class="flex justify-between items-center">
+              <h3 class="font-semibold text-gray-900 text-base md:text-lg">
+                What are the school hours at Little Learners Academy?
+              </h3>
+              <button
+                class="bg-background border-2 text-lg border-black w-8 h-8 md:w-10 md:h-10 rounded-lg"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <div
+            class="bg-tertiary rounded-xl p-6 md:p-8 shadow-sm border-2 border-black"
+          >
+            <div class="flex justify-between items-center">
+              <h3 class="font-semibold text-gray-900 text-base md:text-lg">
+                What are the school hours at Little Learners Academy?
+              </h3>
+              <button
+                class="bg-background border-2 text-lg border-black w-8 h-8 md:w-10 md:h-10 rounded-lg"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-tertiary rounded-xl p-6 md:p-8 shadow-sm border-2 border-black"
+          >
+            <div class="flex justify-between items-center">
+              <h3 class="font-semibold text-gray-900 text-base md:text-lg">
+                What are the school hours at Little Learners Academy?
+              </h3>
+              <button
+                class="bg-background border-2 text-lg border-black w-8 h-8 md:w-10 md:h-10 rounded-lg"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-tertiary rounded-xl p-6 md:p-8 shadow-sm border-2 border-black"
+          >
+            <div class="flex justify-between items-center">
+              <h3 class="font-semibold text-gray-900 text-base md:text-lg">
+                What are the school hours at Little Learners Academy?
+              </h3>
+              <button
+                class="bg-background border-2 text-lg border-black w-8 h-8 md:w-10 md:h-10 rounded-lg"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-tertiary rounded-xl p-6 md:p-8 shadow-sm border-2 border-black"
+          >
+            <div class="flex justify-between items-center">
+              <h3 class="font-semibold text-gray-900 text-base md:text-lg">
+                What are the school hours at Little Learners Academy?
+              </h3>
+              <button
+                class="bg-background border-2 text-lg border-black w-8 h-8 md:w-10 md:h-10 rounded-lg"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Cards Section -->
+    <section class="container mx-auto py-8 md:py-16 px-4">
+      <div class="text-center py-8 md:py-12">
+        <div
+          class="bg-white rounded-lg px-4 py-2 inline-block mb-4 border-2 border-black"
+        >
+          Explore More
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold mt-2">
+          Navigate through our Pages
+        </h2>
+        <p class="mt-4 md:mt-8 max-w-2xl mx-auto text-sm md:text-base">
+          Your gateway to discovering a wealth of valuable information about our
+          kindergarten school, Feel free to explore and learn more about the
+          enriching experience we offer to young learners.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+        <div
+          class="bg-white rounded-xl p-6 md:p-[80px] border-2 border-black shadow-[6px_6px_0_0_#1E1E1E]"
+        >
+          <div class="mb-12 md:mb-20 text-center">
+            <h3 class="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
+              About Us
+            </h3>
+            <img
+              src="/images/Container.png"
+              alt="container"
+              class="w-full max-w-[200px] md:max-w-none mx-auto"
+            />
+            <p class="mt-6 md:mt-8 text-sm md:text-base">
+              Discover our Mission, Values, and our unwavering commitment to
+              providing the best learning experience for your child. Learn about
+              our passionate educators and our engaging approach to early
+              childhood education.
+            </p>
+          </div>
+          <button
+            class="bg-tertiary flex items-center justify-center gap-4 border-2 border-black w-full rounded-lg py-3 shadow-[4px_4px_0_0_#1E1E1E]"
+          >
+            <div>Learn More</div>
+            <img
+              src="/images/arrow/Vector (Stroke) (1).svg"
+              alt=""
+              class="w-4 md:w-5"
+            />
+          </button>
+        </div>
+
+        <div
+          class="bg-white rounded-xl p-6 md:p-[80px] border-2 border-black shadow-[6px_6px_0_0_#1E1E1E]"
+        >
+          <div class="mb-12 md:mb-20 text-center">
+            <h3 class="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
+              Academics
+            </h3>
+            <img
+              src="/images/Container.png"
+              alt="container"
+              class="w-full max-w-[200px] md:max-w-none mx-auto"
+            />
+            <p class="mt-6 md:mt-8 text-sm md:text-base">
+              Delve into our comprehensive academic programs designed to
+              stimulate young minds, foster creativity, and encourage a love for
+              learning. Explore our well-rounded curriculum that nurtures both
+              intellectual and social development.
+            </p>
+          </div>
+          <button
+            class="bg-tertiary flex items-center justify-center gap-4 border-2 border-black w-full rounded-lg py-3 shadow-[4px_4px_0_0_#1E1E1E]"
+          >
+            <div>Learn More</div>
+            <img
+              src="/images/arrow/Vector (Stroke) (1).svg"
+              alt=""
+              class="w-4 md:w-5"
+            />
+          </button>
+        </div>
+
+        <div
+          class="bg-white rounded-xl p-6 md:p-[80px] border-2 border-black shadow-[6px_6px_0_0_#1E1E1E]"
+        >
+          <div class="mb-12 md:mb-20 text-center">
+            <h3 class="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
+              Student Life
+            </h3>
+            <img
+              src="/images/Container.png"
+              alt="container"
+              class="w-full max-w-[200px] md:max-w-none mx-auto"
+            />
+            <p class="mt-6 md:mt-8 text-sm md:text-base">
+              Peek into the vibrant and enriching world of Student Life at
+              Little Learners Academy. Discover the array of extracurricular
+              activities, arts and crafts, sports, and social events that make
+              our school experience truly memorable.
+            </p>
+          </div>
+          <button
+            class="bg-tertiary flex items-center justify-center gap-4 border-2 border-black w-full rounded-lg py-3 shadow-[4px_4px_0_0_#1E1E1E]"
+          >
+            <div>Learn More</div>
+            <img
+              src="/images/arrow/Vector (Stroke) (1).svg"
+              alt=""
+              class="w-4 md:w-5"
+            />
+          </button>
+        </div>
+
+        <div
+          class="bg-white rounded-xl p-6 md:p-[80px] border-2 border-black shadow-[6px_6px_0_0_#1E1E1E]"
+        >
+          <div class="mb-12 md:mb-20 text-center">
+            <h3 class="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
+              Admissions
+            </h3>
+            <img
+              src="/images/Container.png"
+              alt="container"
+              class="w-full max-w-[200px] md:max-w-none mx-auto"
+            />
+            <p class="mt-6 md:mt-8 text-sm md:text-base">
+              Learn about our Enrollment Process and how to secure your child's
+              place at Little Learners Academy. Find information about our
+              admission requirements, application deadlines, and available
+              spaces.
+            </p>
+          </div>
+          <button
+            class="bg-tertiary flex items-center justify-center gap-4 border-2 border-black w-full rounded-lg py-3 shadow-[4px_4px_0_0_#1E1E1E]"
+          >
+            <div>Learn More</div>
+            <img
+              src="/images/arrow/Vector (Stroke) (1).svg"
+              alt=""
+              class="w-4 md:w-5"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="container w-[96%] mx-auto border-2 border-black rounded-xl bg-white py-8 md:py-12 mt-8 md:mt-16 shadow-[6px_6px_0_0_#1E1E1E]"
+    >
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8 mb-8">
+          <div class="lg:col-span-2">
+            <div class="flex items-center gap-2 mb-4">
+              <img
+                src="/images/shape-14.png"
+                alt="logo"
+                class="w-6 md:w-8 h-6 md:h-8"
+              />
+              <span class="font-semibold text-lg md:text-xl"
+                >Little Learners</span
+              >
+            </div>
+            <p class="text-gray-800 mb-4 w-full md:w-72 text-sm md:text-base">
+              We believe in the power of play to foster creativity,
+              problem-solving skills, and social development.
+            </p>
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-6 md:w-8 h-6 md:h-8 bg-tertiary border border-black rounded flex items-center justify-center p-1 md:p-2"
+                >
+                  <img src="/images/icons/Subtract.png" alt="" class="w-full" />
+                </div>
+                <div class="text-sm md:text-base">hello@littlelearners.com</div>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-6 md:w-8 h-6 md:h-8 bg-tertiary border border-black rounded flex items-center justify-center p-1 md:p-2"
+                >
+                  <img
+                    src="/images/icons/Vector (Stroke) (2).png"
+                    alt=""
+                    class="w-full"
+                  />
+                </div>
+                <div class="text-sm md:text-base">+91 91813 23 2309</div>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-6 md:w-8 h-6 md:h-8 bg-tertiary border border-black rounded flex items-center justify-center p-1 md:p-2"
+                >
+                  <img
+                    src="/images/icons/Subtract (1).png"
+                    alt=""
+                    class="w-full"
+                  />
+                </div>
+                <div class="text-sm md:text-base">Somewhere in the World</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4 text-base md:text-lg">Home</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-primary text-sm md:text-base"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary text-sm md:text-base"
+                  >Our Testimonials</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary text-sm md:text-base"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4 text-base md:text-lg">About Us</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-primary text-sm md:text-base"
+                  >Our Mission</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary text-sm md:text-base"
+                  >Our Vision</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary text-sm md:text-base"
+                  >Awards and Recognitions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary text-sm md:text-base"
+                  >History</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary text-sm md:text-base"
+                  >Teachers</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4 text-base md:text-lg">Academics</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-primary text-sm md:text-base"
+                  >Special Features</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary text-sm md:text-base"
+                  >Gallery</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-4 text-base md:text-lg">Contact Us</h4>
+            <div class="space-y-2 flex flex-col">
+              <a href="#" class="hover:text-primary text-sm md:text-base"
+                >Information</a
+              >
+              <a href="#" class="hover:text-primary text-sm md:text-base"
+                >Map & Direction</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-b border-gray-800 py-6 md:py-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <div
+            class="flex flex-col md:flex-row justify-between w-full text-sm mb-4 md:mb-0 gap-4 md:gap-0"
+          >
+            <div class="flex flex-wrap items-center gap-4">
+              <a href="#" class="hover:text-primary text-xs md:text-sm"
+                >Terms of Service</a
+              >
+              <a href="#" class="hover:text-primary text-xs md:text-sm"
+                >Privacy Policy</a
+              >
+              <a href="#" class="hover:text-primary text-xs md:text-sm"
+                >Cookie Policy</a
+              >
+            </div>
+
+            <div class="flex gap-4">
+              <div
+                class="w-6 md:w-8 h-6 md:h-8 bg-tertiary border border-black rounded flex items-center justify-center p-1 md:p-2 hover:bg-white"
+              >
+                <a href="#"
+                  ><img
+                    src="/images/icons/Vector (5).png"
+                    alt="icon"
+                    class="w-full"
+                /></a>
+              </div>
+              <div
+                class="w-6 md:w-8 h-6 md:h-8 bg-tertiary border border-black rounded flex items-center justify-center p-1 md:p-2 hover:bg-white"
+              >
+                <a href="#"
+                  ><img
+                    src="/images/icons/Vector (4).png"
+                    alt="icon"
+                    class="w-full"
+                /></a>
+              </div>
+              <div
+                class="w-6 md:w-8 h-6 md:h-8 bg-tertiary border border-black rounded flex items-center justify-center p-1 md:p-2 hover:bg-white"
+              >
+                <a href="#"
+                  ><img
+                    src="/images/icons/Vector (3).png"
+                    alt="icon"
+                    class="w-full"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-xs md:text-sm text-center mt-4 text-gray-700">
+          Copyright © 2023 Little Learners Academy. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      //  nav bar for mobile ver
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const navLinks = document.getElementById("nav-links");
+
+      mobileMenuButton.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
